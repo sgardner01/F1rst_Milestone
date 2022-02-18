@@ -1,0 +1,15 @@
+body {
+  background-color: aqua;
+}
+
+button {
+  background-color: green;
+}
+
+#question-box {
+  background-color: yellow;
+}
+
+.container {
+  align-items: center;
+}
