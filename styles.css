@@ -1,9 +1,20 @@
-.title{
-  background-color: black;
+h1 {
+  font-weight: bold;
+}
+
+section {
+  /* background-color: blueviolet; */
+  position: relative;
+  left: 6em;
+  top: 3em;
+  height: 200px;
+  width: 50%;
   text-align: center;
   font-size: 60px;
-  margin-top: 5%;
-  color: #169e2f;
+  margin-top: 2%;
+  color: chartreuse;
+  /* border-style: dashed; */
+  border-color: chartreuse;
 }
 
 .buttons {
@@ -12,7 +23,7 @@
   margin: 1%;
 }
 
-.btn-true {
+.true-btn {
   /* background-color: green;
   border-radius: 10px; */
   background-color: white; 
@@ -23,12 +34,12 @@
   cursor: pointer;
 }
 
-.btn-true:hover {
+.true-btn:hover {
   background-color: #4CAF50;
   color: white;
 }
 
-.btn-false {
+.false-btn {
   /* background-color: red;
   border-radius: 10px; */
   background-color: white; 
@@ -39,20 +50,20 @@
   cursor: pointer;
 }
 
-.btn-false:hover {
+.false-btn:hover {
   background-color: #f44336;
   color: white;
 }
 
 .container {
   margin: 10%;
-  background-color: #078587;
+  background-color: black;
   border-radius: 10px;
   padding: 40px;
   box-shadow: 0 0 25px 5px;
 }
 
-.btn-sub {
+.sub-btn {
   /* background-color: #03cafc; */
   background-color: white;
   border: 2px solid #36bcf5;
@@ -63,11 +74,18 @@
   cursor: pointer;
 }
 
-.btn-sub:hover {
+.sub-btn:hover {
   background-color: #36bcf5;
   color: black;
 }
 
 body {
-  background-color: gold;
+  /* background-color: gold; */
+  background-image: url(https://media.istockphoto.com/vectors/neon-quiz-sign-vector-design-template-quiz-neon-frame-light-banner-vector-id1248190953);
+background-repeat: no-repeat;
+background-size: cover;
 }
+
+ #questions-box {
+  background-color: blueviolet;
+ }

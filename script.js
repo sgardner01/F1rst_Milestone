@@ -1,37 +1,38 @@
+const submitButton = document.getElementById('submit-btn')
+const questionBoxElement = document.getElementById('questions-box')
+const questionElement = document.getElementById('question')
 
+let currentQuestionIndex
 
+submitButton.addEventListener('click' , submitAnswer)
+// trueButton.addEventListener('click', checkAnswer)
+// falseButton.addEvenetListener('click', checkAnswer)
 
-const questions = [
-    {
-      question: 'What is 2 + 2?',
-      answers: [
-        { text: '4', correct: true },
-        { text: '22', correct: false }
-      ]
-    },
-    {
-      question: 'Who is the best YouTuber?',
-      answers: [
-        { text: 'Web Dev Simplified', correct: true },
-        { text: 'Traversy Media', correct: true },
-        { text: 'Dev Ed', correct: true },
-        { text: 'Fun Fun Function', correct: true }
-      ]
-    },
-    {
-      question: 'Is web development fun?',
-      answers: [
-        { text: 'Kinda', correct: false },
-        { text: 'YES!!!', correct: true },
-        { text: 'Um no', correct: false },
-        { text: 'IDK', correct: false }
-      ]
-    },
-    {
-      question: 'What is 4 * 2?',
-      answers: [
-        { text: '6', correct: false },
-        { text: '8', correct: true }
-      ]
-    }
-  ]
+//Code runs when sub button is clicked
+function submitAnswer() {
+  console.log('submitted')
+  for (let i = 0; i < questionList.length; i++) {
+    console.log(questionList[i]);
+  }
+  setNextQuestion()
+}
+
+function setNextQuestion() {
+}
+
+//showing of questions
+function selectAnswer() {
+  showQuestion(currentQuestionIndex)
+}
+
+//Move to next quuestion
+function showQuestion(questionsList) {
+}
+
+let questionList = [
+  'question1', 
+  'question2', 
+  'question3',
+  'question4',
+  'question5'
+]
